@@ -6,7 +6,6 @@ export default function Weather() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState("");
   function displayWeather(response) {
-    console.log(response.data);
     setWeather({
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
