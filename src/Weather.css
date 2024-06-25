@@ -1,0 +1,25 @@
+.Container {
+  background: linear-gradient(
+    109.6deg,
+    rgb(177, 173, 219) 11.2%,
+    rgb(245, 226, 226) 91.1%
+  );
+  margin: 50px auto;
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+form {
+  padding: 25px;
+}
+.search-form {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.submitButton {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}

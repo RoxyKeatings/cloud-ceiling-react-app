@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -18,14 +19,17 @@ export default function Weather() {
   }
   return (
     <div className="Container">
+      <h1>Welcome to Cloud Ceiling ☁️</h1>
       <form onSubmit={handleSubmit}>
         <input
+          className="search-form"
           type="search"
           placeholder="Search City Weather.."
           onChange={handleChange}
           required
-        />
-        <input type="submit" value="Search" />
+        />{" "}
+        {"   "}
+        <input className="submitButton" type="submit" value="Search" />
       </form>
     </div>
   );
