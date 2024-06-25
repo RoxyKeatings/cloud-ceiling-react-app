@@ -4,8 +4,16 @@ import "./Weather.css";
 
 export default function Weather() {
   const [city, setCity] = useState("");
+  const [weather, setWeather] = useState("");
   function displayWeather(response) {
     console.log(response.data);
+    setWeather({
+      temperature: response.data.main.temp,
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+    });
   }
   function handleChange(event) {
     setCity(event.target.value);
@@ -17,20 +25,44 @@ export default function Weather() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(displayWeather);
   }
-  return (
-    <div className="Container">
-      <h1>Welcome to Cloud Ceiling ☁️</h1>
+  if (city) {
+    return (
+      <div className="Container">
+        <h1>Welcome to Cloud Ceiling ☁️</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            className="search-form"
+            type="search"
+            placeholder="Search City Weather.."
+            onChange={handleChange}
+            required
+          />{" "}
+          {"   "}
+          <input className="submitButton" type="submit" value="Search" />
+        </form>
+        {weather && (
+          <ul>
+            <li>Temperature: {Math.round(weather.temperature)}°C</li>
+            <li>Description: {weather.description}</li>
+            <li>Humidity: {weather.humidity}%</li>
+            <li>Wind:{weather.wind}km/h</li>
+            <li>
+              <img src={weather.icon} />
+            </li>
+          </ul>
+        )}
+      </div>
+    );
+  } else {
+    return (
       <form onSubmit={handleSubmit}>
         <input
-          className="search-form"
           type="search"
-          placeholder="Search City Weather.."
+          placeholder="Search for city"
           onChange={handleChange}
-          required
-        />{" "}
-        {"   "}
-        <input className="submitButton" type="submit" value="Search" />
+        />
+        <input type="submit" value="search" />
       </form>
-    </div>
-  );
+    );
+  }
 }

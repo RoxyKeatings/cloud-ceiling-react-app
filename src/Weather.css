@@ -23,3 +23,8 @@ form {
   border: none;
   border-radius: 10px;
 }
+li {
+  list-style: none;
+  font-size: 35px;
+  color: black;
+}
