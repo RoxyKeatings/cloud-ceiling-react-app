@@ -27,7 +27,6 @@ export default function Weather() {
   if (city) {
     return (
       <div className="Container">
-        <h1>Welcome to Cloud Ceiling ☁️</h1>
         <form onSubmit={handleSubmit}>
           <input
             className="search-form"
