@@ -4,9 +4,8 @@
     rgb(177, 173, 219) 11.2%,
     rgb(245, 226, 226) 91.1%
   );
+  background-repeat: no-repeat;
   text-align: center;
-  margin: 0 auto;
-  padding: 100px;
-  border-radius: 15px;
+  margin: 100px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
