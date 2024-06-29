@@ -9,8 +9,9 @@
   padding: 100px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-.Header {
-  font-size: 40px;
+header {
+  color: #8f4fa0;
+  font-style: 1px solid black;
 }
 form {
   padding: 25px;
@@ -31,6 +32,9 @@ li {
   color: black;
 }
 footer {
-  padding: 25px;
+  padding: 50px;
   text-transform: uppercase;
+}
+a {
+  color: #8f4fa0;
 }

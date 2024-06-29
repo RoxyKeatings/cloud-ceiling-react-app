@@ -9,14 +9,12 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <body>
-        <div className="container">
-          <Header />
-          <Weather />
-          <Forecast />
-          <Footer />
-        </div>
-      </body>
+      <div className="container">
+        <Header />
+        <Weather />
+        <Forecast />
+        <Footer />
+      </div>
     </div>
   );
 }

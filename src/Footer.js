@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer p-5="true">
       {" "}
       This React project was coded by{" "}
       <a
