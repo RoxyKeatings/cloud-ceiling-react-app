@@ -1,16 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Weather from "./Weather";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
 import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>coming soon...</h3>
-        <Weather />
-      </header>
+      <Weather />
+      <Forecast />
+      <Footer />
     </div>
   );
 }

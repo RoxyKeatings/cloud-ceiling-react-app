@@ -1,10 +1,5 @@
 .Container {
-  background: linear-gradient(
-    109.6deg,
-    rgb(177, 173, 219) 11.2%,
-    rgb(245, 226, 226) 91.1%
-  );
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 100px;
   border-radius: 15px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
