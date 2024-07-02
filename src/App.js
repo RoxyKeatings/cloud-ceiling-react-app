@@ -1,10 +1,11 @@
+import React from "react";
 import "./App.css";
 import "./Weather.css";
+import "bootstrap/dist/css/bootstrap.css";
 import Header from "./Header";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
-import React from "react";
 
 function App() {
   return (
