@@ -7,9 +7,10 @@ export default function Forecast() {
         <div class="col-4">
           <div className="forecast-weekdays">
             <div className="forecast-dayofweek">
-              <strong> Sunday</strong>
+              <strong> Sun</strong>
               <div className="forecast-weather-icon">☀️</div>
-              <span className="forecast-temp-max">24°C</span> |{" "}
+              <span className="forecast-temp-max">24°C</span>
+              <strong> | </strong>{" "}
               <span className="forecast-temp-min">13°C</span>
             </div>
           </div>
@@ -17,8 +18,9 @@ export default function Forecast() {
         <div class="col-2">
           <div className="forecast-weekdays">
             <div className="forecast-dayofweek">
-              Monday<div className="forecast-weather-icon">☀️</div>
-              <span className="forecast-temp-max">24°C</span> |{" "}
+              Mon<div className="forecast-weather-icon">☀️</div>
+              <span className="forecast-temp-max">24°C</span>{" "}
+              <strong>----</strong>{" "}
               <span className="forecast-temp-min">13°C</span>
             </div>
           </div>
@@ -26,8 +28,9 @@ export default function Forecast() {
         <div class="col-2">
           <div className="forecast-weekdays">
             <div className="forecast-dayofweek">
-              Tuesday<div className="forecast-weather-icon">☀️</div>
-              <span className="forecast-temp-max">24°C</span> |{" "}
+              Tues<div className="forecast-weather-icon">☀️</div>
+              <span className="forecast-temp-max">24°C</span>{" "}
+              <strong>----</strong>{" "}
               <span className="forecast-temp-min">13°C</span>
             </div>
           </div>
@@ -35,8 +38,9 @@ export default function Forecast() {
         <div class="col-2">
           <div className="forecast-weekdays">
             <div className="forecast-dayofweek">
-              Wednesday<div className="forecast-weather-icon">☀️</div>
-              <span className="forecast-temp-max">24°C</span> |{" "}
+              Wed<div className="forecast-weather-icon">☀️</div>
+              <span className="forecast-temp-max">24°C</span>{" "}
+              <strong>----</strong>{" "}
               <span className="forecast-temp-min">13°C</span>
             </div>
           </div>
@@ -44,8 +48,9 @@ export default function Forecast() {
         <div class="col-2">
           <div className="forecast-weekdays">
             <div className="forecast-dayofweek">
-              Thursday<div className="forecast-weather-icon">☀️</div>
-              <span className="forecast-temp-max">24°C</span> |{" "}
+              Thurs<div className="forecast-weather-icon">☀️</div>
+              <span className="forecast-temp-max">24°C</span>{" "}
+              <strong>----</strong>{" "}
               <span className="forecast-temp-min">13°C</span>
             </div>
           </div>
